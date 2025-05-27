@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Belajar Ngoding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        body {
+            background-color: #e3f2fd;
+            color: #444;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #f8bbd0 !important;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            color: #2196f3;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 2px solid #f8bbd0;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(248, 187, 208, 0.4);
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-primary {
+            background-color: #f48fb1;
+            border-color: #f48fb1;
+        }
+
+        .btn-primary:hover {
+            background-color: #f06292;
+            border-color: #ec407a;
+        }
+
+        .btn-success {
+            background-color: #81d4fa;
+            border-color: #81d4fa;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #4fc3f7;
+            border-color: #4fc3f7;
+        }
+
+        .btn-danger {
+            background-color: #ce93d8;
+            border-color: #ce93d8;
+        }
+
+        .btn-danger:hover {
+            background-color: #ba68c8;
+            border-color: #ba68c8;
+        }
+
+        footer {
+            background-color: #f8bbd0;
+            color: white;
+            padding: 1.2rem 0;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: #bbdefb;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            border: 1px solid #f8bbd0;
+        }
+
+        #daftarKomentar h5 {
+            color: #ec407a;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mitania's Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Konten -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Artikel Utama -->
+            <div class="col-md-8">
+                <div class="card p-4 mb-4">
+                    <h1 class="mb-3">🧠 5 Tips Belajar Ngoding untuk Pemula</h1>
+                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=800&h=400&q=80"
+                        alt="programmer at work" class="img-fluid rounded mb-4"
+                        style="max-height: 350px; object-fit: cover;" />
+                    <div class="article-content">
+                        <p><strong>Belajar coding tidak harus sulit!</strong> Belajar coding tidak harus sulit!
+                            Dengan
+                            konsistensi dan sumber belajar yang tepat, kamu bisa menguasainya dari rumah. Berikut
+                            ini
+                            beberapa tips yang bisa membantumu memulai perjalanan coding dengan lancar:</p>
+
+                        <p><strong>Mulailah dengan Dasar yang Kuat</strong><br />
+                            Pahami dulu fundamental seperti HTML, CSS, dan JavaScript. Ini adalah pondasi untuk
+                            membangun website atau aplikasi. Setelah itu, kamu bisa mulai belajar framework populer
+                            seperti Bootstrap untuk desain cepat dan React untuk membuat aplikasi interaktif.</p>
+
+                        <p><strong>Praktikkan Setiap Hari</strong><br />
+                            Coding itu skill yang semakin diasah semakin tajam. Luangkan waktu minimal 30 menit
+                            setiap
+                            hari untuk praktik langsung. Buat proyek kecil seperti halaman profil, form sederhana,
+                            atau
+                            bahkan game kecil agar kamu makin paham.</p>
+
+                        <p><strong>Manfaatkan Sumber Belajar Online</strong><br />
+                            Ada banyak tutorial gratis dan berbayar di internet, seperti di YouTube, freeCodeCamp,
+                            Codecademy, dan lainnya. Pilih sumber yang sesuai gaya belajar kamu, entah itu video,
+                            artikel, atau interaktif.</p>
+
+                        <p><strong>Bergabung dengan Komunitas Coding</strong><br />
+                            Gabung ke forum atau grup belajar coding seperti Stack Overflow, GitHub, atau komunitas
+                            lokal. Kamu bisa tanya, berbagi, dan belajar dari pengalaman orang lain, sekaligus dapat
+                            motivasi.</p>
+
+                        <p><strong>Jangan Takut Salah dan Terus Eksperimen</strong><br />
+                            Coding sering kali butuh trial and error. Kalau ada error, coba cari solusinya sendiri
+                            dulu,
+                            baru tanya kalau benar-benar bingung. Kesalahan adalah bagian penting dari proses
+                            belajar
+                            yang akan memperkuat kemampuanmu.</p>
+
+                        <p><strong>Contoh Proyek Sederhana untuk Pemula</strong><br />
+                            Untuk mulai praktik, kamu bisa coba buat proyek-proyek sederhana seperti:</p>
+                        <ol>
+                            <li>Halaman Profil Diri: Buat halaman web yang menampilkan biodata singkat, foto, dan
+                                kontak
+                                kamu.</li>
+                            <li>Form Kontak: Buat form input nama, email, dan pesan yang bisa di-submit (meski tanpa
+                                backend).</li>
+                            <li>To-Do List: Aplikasi sederhana untuk menambah dan menghapus daftar tugas menggunakan
+                                JavaScript.</li>
+                        </ol>
+
+                        <p>Proyek-proyek kecil ini membantu kamu memahami konsep HTML, CSS, dan JavaScript secara
+                            langsung.
+                        </p>
+
+                        <p><strong>Rekomendasi Tutorial dan Sumber Belajar</strong></p>
+                        <ul>
+                            <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a> — Kursus
+                                coding gratis dengan banyak proyek praktis.</li>
+                            <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a> — Platform
+                                interaktif untuk belajar coding.</li>
+                            <li><a href="https://www.theodinproject.com" target="_blank">The Odin Project</a> —
+                                Kurikulum lengkap web development.</li>
+                            <li>YouTube Channels seperti
+                                <a href="https://www.youtube.com/c/TraversyMedia" target="_blank">Traversy
+                                    Media</a>,
+                                <a href="https://www.youtube.com/c/TheNetNinja" target="_blank">The Net Ninja</a>,
+                                dan
+                                <a href="https://www.youtube.com/c/FaztCode" target="_blank">Fazt</a> untuk tutorial
+                                video mudah diikuti.
+                            </li>
+                        </ul>
+
+
+                        <p>Mulailah dengan memahami dasar-dasar <span class="highlight">HTML</span>, <span
+                                class="highlight">CSS</span>, dan <span class="highlight">JavaScript</span> sebelum
+                            lanjut ke framework seperti <span class="highlight">Bootstrap</span> dan <span
+                                class="highlight">React</span>.</p>
+                    </div>
+
+                    <!-- Form Komentar -->
+                    <div class="mt-5">
+                        <h4>Tinggalkan Komentar</h4>
+                        <form id="formKomentar">
+                            <div class="mb-3">
+                                <label for="nama" class="form-label">Nama</label>
+                                <input type="text" class="form-control" id="nama" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="komentar" class="form-label">Komentar</label>
+                                <textarea class="form-control" id="komentar" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim</button>
+                        </form>
+                        <hr />
+                        <div id="daftarKomentar">
+                            <h5>Komentar:</h5>
+                            <!-- Komentar akan muncul di sini -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="card p-4 mb-4">
+                    <h4 class="mb-3">Tentang Penulis</h4>
+                    <p>Halo! Saya Mitania, penulis blog ini. Saya suka belajar coding dan berbagi tips untuk pemula.</p>
+                </div>
+                <div class="card p-4">
+                    <h4 class="mb-3">Kategori</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI/UX</li>
+                        <li>Tips Pemrograman</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">© <span id="tanggal"></span> Mitania's Blog. All rights reserved.</p>
+            <p class="mb-0">
+                Dibuat dengan 💻 dan ☕ menggunakan <a href="https://getbootstrap.com"
+                    class="text-warning text-decoration-none">Bootstrap 5</a>
+            </p>
+            <div class="mt-3">
+                <a href="https://instagram.com/username" target="_blank" class="text-warning mx-2 fs-4">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://github.com/username" target="_blank" class="text-warning mx-2 fs-4">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/username" target="_blank" class="text-warning mx-2 fs-4">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
